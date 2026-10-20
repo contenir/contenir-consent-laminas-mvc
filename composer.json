@@ -1,0 +1,92 @@
+{
+    "name": "contenir/consent-laminas-mvc",
+    "description": "Laminas MVC adapter for contenir/consent: consent()->head() and consent()->bodyEnd() write the cookie banner and Consent Mode, consentScript() gates a site's own embeds, consentPreferencesLink() reopens the preferences, and a route serves the banner's files.",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "contenir",
+        "consent",
+        "cookie-consent",
+        "consent-mode",
+        "laminas",
+        "mvc"
+    ],
+    "homepage": "https://contenir.com.au",
+    "support": {
+        "issues": "https://github.com/contenir/contenir-consent-laminas-mvc/issues",
+        "source": "https://github.com/contenir/contenir-consent-laminas-mvc"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/contenir/contenir-consent"
+        }
+    ],
+    "require": {
+        "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
+        "contenir/consent": "dev-feat/library as 0.1.x-dev",
+        "laminas/laminas-http": "^2.19",
+        "laminas/laminas-router": "^3.13",
+        "laminas/laminas-servicemanager": "^3.22 || ^4.0",
+        "laminas/laminas-stdlib": "^3.19",
+        "laminas/laminas-view": "^2.30",
+        "psr/container": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "contenir/contenir-qa-tools": "0.1.x-dev",
+        "infection/infection": "^0.34.1",
+        "phpunit/phpunit": "^11.5.42"
+    },
+    "autoload": {
+        "psr-4": {
+            "Contenir\\Consent\\Laminas\\Mvc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Contenir\\Consent\\Laminas\\Mvc\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@static-analysis",
+            "@test",
+            "@test-integration",
+            "@mutation-test"
+        ],
+        "cs-check": [
+            "mago format --check",
+            "mago lint"
+        ],
+        "cs-fix": [
+            "mago format",
+            "mago lint --fix"
+        ],
+        "static-analysis": "mago analyze",
+        "test": "phpunit --colors=always --testsuite unit",
+        "test-integration": "phpunit --colors=always --testsuite integration",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "mutation-test": "infection"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.99"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "extra": {
+        "laminas": {
+            "module": "Contenir\\Consent\\Laminas\\Mvc",
+            "config-provider": "Contenir\\Consent\\Laminas\\Mvc\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
