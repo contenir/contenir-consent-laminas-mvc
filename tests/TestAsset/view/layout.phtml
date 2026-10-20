@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @var Laminas\View\Renderer\PhpRenderer $this
+ */
+?>
+<!doctype html>
+<html>
+<head>
+<?= $this->consent()->head('page-nonce') ?>
+</head>
+<body>
+<?= $this->consentScript('preferences', src: 'https://www.youtube.com/iframe_api', nonce: 'page-nonce') ?>
+<footer><?= $this->consentPreferencesLink() ?></footer>
+<?= $this->consent()->bodyEnd('page-nonce') ?>
+</body>
+</html>
