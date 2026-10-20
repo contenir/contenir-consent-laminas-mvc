@@ -6,6 +6,11 @@ adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased] - 2026-10-21
 
+### Changed
+
+- Requires contenir/consent `0.1.x-dev` from its `main` branch, now that the library is merged, where it required the
+  library's pull request branch, which no longer exists.
+
 ### Added
 
 - `consent()->head()` and `consent()->bodyEnd()`: the banner's stylesheet, Google Consent Mode's denied defaults on a
