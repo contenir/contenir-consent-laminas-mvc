@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77d3870b3aeff8e008a1f41001e8653a",
+    "content-hash": "64d7e197b6f61bef58a607b8d4c4548e",
     "packages": [
         {
             "name": "contenir/consent",
-            "version": "dev-feat/library",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contenir/contenir-consent.git",
-                "reference": "64c85bbd5d9f4b4de24c69c1d23bb5ad89e2cd1e"
+                "url": "git@github.com:contenir/contenir-consent.git",
+                "reference": "66fe77787ee975b6f8d92c09ae3cf3b4d58fdc92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contenir/contenir-consent/zipball/64c85bbd5d9f4b4de24c69c1d23bb5ad89e2cd1e",
-                "reference": "64c85bbd5d9f4b4de24c69c1d23bb5ad89e2cd1e",
+                "url": "https://api.github.com/repos/contenir/contenir-consent/zipball/66fe77787ee975b6f8d92c09ae3cf3b4d58fdc92",
+                "reference": "66fe77787ee975b6f8d92c09ae3cf3b4d58fdc92",
                 "shasum": ""
             },
             "require": {
@@ -28,6 +28,7 @@
                 "infection/infection": "^0.34.1",
                 "phpunit/phpunit": "^11.5.42"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -93,7 +94,7 @@
                 "issues": "https://github.com/contenir/contenir-consent/issues",
                 "source": "https://github.com/contenir/contenir-consent"
             },
-            "time": "2026-10-20T23:13:05+00:00"
+            "time": "2026-10-20T23:26:19+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -5211,14 +5212,7 @@
             "time": "2026-10-05T23:14:19+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "contenir/consent",
-            "version": "dev-feat/library",
-            "alias": "0.1.x-dev",
-            "alias_normalized": "0.1.9999999.9999999-dev"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "contenir/consent": 20,
