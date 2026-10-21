@@ -8,6 +8,10 @@ adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- The package is renamed `contenir/contenir-consent-laminas-mvc`, after its repository, and requires the library by
+  its new name, `contenir/contenir-consent`. They were `contenir/consent-laminas-mvc` and `contenir/consent`, neither
+  ever tagged. The namespace (`Contenir\Consent\Laminas\Mvc\`) is unchanged.
+
 - Requires contenir/consent `0.1.x-dev` from its `main` branch, now that the library is merged, where it required the
   library's pull request branch, which no longer exists.
 
