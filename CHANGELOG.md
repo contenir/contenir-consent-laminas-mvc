@@ -4,16 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased] - 2026-10-21
+## [0.1.0] - 2026-10-21
 
 ### Changed
 
 - The package is renamed `contenir/contenir-consent-laminas-mvc`, after its repository, and requires the library by
   its new name, `contenir/contenir-consent`. They were `contenir/consent-laminas-mvc` and `contenir/consent`, neither
   ever tagged. The namespace (`Contenir\Consent\Laminas\Mvc\`) is unchanged.
-
-- Requires contenir/consent `0.1.x-dev` from its `main` branch, now that the library is merged, where it required the
-  library's pull request branch, which no longer exists.
+- Requires contenir/contenir-consent `^0.1` from Packagist, where it required `0.1.x-dev` through a `vcs` repository
+  entry. A project at stable stability can install the adapter.
 
 ### Added
 
