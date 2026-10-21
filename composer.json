@@ -1,6 +1,6 @@
 {
-    "name": "contenir/consent-laminas-mvc",
-    "description": "Laminas MVC adapter for contenir/consent: consent()->head() and consent()->bodyEnd() write the cookie banner and Consent Mode, consentScript() gates a site's own embeds, consentPreferencesLink() reopens the preferences, and a route serves the banner's files.",
+    "name": "contenir/contenir-consent-laminas-mvc",
+    "description": "Laminas MVC adapter for contenir/contenir-consent: consent()->head() and consent()->bodyEnd() write the cookie banner and Consent Mode, consentScript() gates a site's own embeds, consentPreferencesLink() reopens the preferences, and a route serves the banner's files.",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -24,7 +24,7 @@
     ],
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
-        "contenir/consent": "0.1.x-dev",
+        "contenir/contenir-consent": "0.1.x-dev",
         "laminas/laminas-http": "^2.19",
         "laminas/laminas-router": "^3.13",
         "laminas/laminas-servicemanager": "^3.22 || ^4.0",

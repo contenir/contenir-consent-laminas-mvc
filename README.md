@@ -1,9 +1,9 @@
-# contenir/consent-laminas-mvc
+# contenir/contenir-consent-laminas-mvc
 
 [![Continuous Integration](https://github.com/contenir/contenir-consent-laminas-mvc/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/contenir/contenir-consent-laminas-mvc/actions/workflows/continuous-integration.yml)
 [![codecov](https://codecov.io/gh/contenir/contenir-consent-laminas-mvc/graph/badge.svg)](https://codecov.io/gh/contenir/contenir-consent-laminas-mvc)
 
-The Laminas MVC adapter for [contenir/consent](https://github.com/contenir/contenir-consent). It puts the cookie
+The Laminas MVC adapter for [contenir/contenir-consent](https://github.com/contenir/contenir-consent). It puts the cookie
 banner on a site's pages, gates the site's own embeds until visitors allow them, and serves the banner's files.
 
 Consent is set in the CMS, by the [Consent add-on](https://github.com/contenir-extension/consent). Settings are read
@@ -17,10 +17,13 @@ from the site's `config['settings']`, as the CMS writes them, so there is nothin
 ## Install
 
 ```bash
-composer require contenir/consent-laminas-mvc
+composer require contenir/contenir-consent-laminas-mvc
 ```
 
 Add `Contenir\Consent\Laminas\Mvc` to the application's modules (laminas-component-installer offers to).
+
+The package is named after its repository, as every Contenir package is. Before 0.1.0 it was
+`contenir/consent-laminas-mvc`.
 
 ## Usage
 
@@ -76,7 +79,7 @@ and contenir/tracking-laminas-mvc's interface of the same name.
   the site's own (priority 1000), cacheable for a year. A change to either file changes its name.
 
 The banner, its categories, the `contenir:consent` browser event and Google Consent Mode are described in
-[contenir/consent](https://github.com/contenir/contenir-consent).
+[contenir/contenir-consent](https://github.com/contenir/contenir-consent).
 
 ## Configuration
 
@@ -95,7 +98,7 @@ return [
                 'privacy_url' => 'https://policies.google.com/privacy',
             ],
         ],
-        'texts'             => [                  // replaces contenir/consent's Texts defaults, by name
+        'texts'             => [                  // replaces contenir/contenir-consent's Texts defaults, by name
             'acceptAll' => 'Accept all cookies',
         ],
     ],
