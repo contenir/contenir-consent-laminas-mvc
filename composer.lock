@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f8f8e75371723d2760ec00f40225737",
+    "content-hash": "2ea317f2d80da250aa228e0ed0b5e55f",
     "packages": [
         {
             "name": "contenir/contenir-consent",
-            "version": "dev-main",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:contenir/contenir-consent.git",
+                "url": "https://github.com/contenir/contenir-consent.git",
                 "reference": "cc29c061397be09f0eab07f309262b317b27fba3"
             },
             "dist": {
@@ -28,7 +28,6 @@
                 "infection/infection": "^0.34.1",
                 "phpunit/phpunit": "^11.5.42"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -40,43 +39,7 @@
                     "Contenir\\Consent\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Contenir\\Consent\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "check": [
-                    "@cs-check",
-                    "@static-analysis",
-                    "@test",
-                    "@test-integration",
-                    "@mutation-test"
-                ],
-                "cs-check": [
-                    "mago format --check",
-                    "mago lint"
-                ],
-                "cs-fix": [
-                    "mago format",
-                    "mago lint --fix"
-                ],
-                "static-analysis": [
-                    "mago analyze"
-                ],
-                "test": [
-                    "phpunit --colors=always --testsuite unit"
-                ],
-                "test-integration": [
-                    "phpunit --colors=always --testsuite integration"
-                ],
-                "test-coverage": [
-                    "phpunit --colors=always --coverage-clover clover.xml"
-                ],
-                "mutation-test": [
-                    "infection"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5215,7 +5178,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "contenir/contenir-consent": 20,
         "contenir/contenir-qa-tools": 20
     },
     "prefer-stable": true,
